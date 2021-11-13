@@ -48,7 +48,7 @@ const Update = () => {
         try {
           setSpin(true);
           opacityBackground("0.5");
-          const res = await axios.get(`${process.env.HOST}/users/me`, {
+          const res = await axios.get(`https://nodejs-mongodb97.herokuapp.com/users/me`, {
             headers: { Authorization: `Bearer ${token}` },
           });
           setUser((prevUser) => {
